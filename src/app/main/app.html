@@ -1,0 +1,118 @@
+ <!-- services start -->
+        <div class="lower-page" >
+            <!-- center container start -->
+            <div class="center-container">
+                <!-- center block start -->
+                <div class="center-block">
+                    <!-- lower content start -->
+                    <div class="lower-content">
+                        <!-- services intro start -->
+                        <div class="services-intro">
+                            <h1>
+                               Racing Pro
+                            </h1>
+                        </div><!-- services intro end -->
+                        <!-- container start -->
+                        <div class="container center">
+                            <!-- divider left top start -->
+                            <div class="sixteen columns">
+                                <div class="divider-left-top"></div>
+                            </div><!-- divider left top end -->
+                            <!-- divider right top start -->
+                            <div class="sixteen columns">
+                                <div class="divider-right-top"></div>
+                            </div><!-- divider right top end -->
+                            
+                            <div class="sixteen columns ">
+                               
+                                
+
+   
+    <div ng-hide="isready"><h2>Loading race data , please wait ...</h2></div>
+    <form class="ui form" style="    width: 300px;" ng-show="isready">
+             <h2>Please select a race</h2>
+  <select class="ui fluid dropdown"  style="text-align:center;" ng-model="selectedlink">
+        <option ng-repeat="race in races" value="{{race.link}}">{{race.no}}</option>
+   
+      </select>
+ 
+   <button ng-click="calc()" class="submit white-border" style="margin-top:20px;" type="submit">{{buttonText}}</button>
+     
+    </form>
+     
+
+ 
+
+                                
+
+
+
+                            </div>
+                             <!-- divider left bottom start -->
+                            <div class="sixteen columns">
+                                <div class="divider-left-bottom"></div>
+                            </div><!-- divider left bottom end -->
+                            <!-- divider right bottom start -->
+                            <div class="sixteen columns">
+                                <div class="divider-right-bottom"></div>
+                            </div><!-- divider right bottom end -->
+                           
+                           
+                        </div><!-- container end -->
+                        <div class="container center" ng-show="isResultReady" style="padding:30px 0px">
+                            <h2>Recommended Bets </h2>
+                            <div class="five columns " style="margin:30px 0px">
+                            <canvas id="top1" width="200" height="200"></canvas>
+                                <h2>{{horseList[0].horse}} : {{horseList[0].grade}}</h2>
+                            </div>
+                            <div class="six columns " style="margin:30px 0px">
+                            <canvas id="top2" width="200" height="200"></canvas>
+                                <h2>{{horseList[1].horse}} : {{horseList[1].grade}}</h2>
+                            </div>
+                            <div class="five columns " style="margin:30px 0px">
+                            <canvas id="top3" width="200" height="200"></canvas>
+                                <h2>{{horseList[2].horse}} : {{horseList[2].grade}}</h2>
+                            </div>
+                              
+                            <div class="sixteen columns " style="margin:30px 0px">
+                            <canvas id="myChart" width="700px" height="350"></canvas>
+                                <h2>Horse Grade  </h2>
+                            </div>
+                            
+                           
+                             <div class="sixteen columns " style="margin:30px 0px">
+                            <canvas id="horse_weight" width="700px" height="350"></canvas>
+                                <h2>Horse Weight (lb)  </h2>
+                            </div>
+                            
+                            <div class="sixteen columns " style="margin:30px 0px">
+                            <canvas id="weight" width="700px" height="350"></canvas>
+                                <h2> Weight Ranking (lb) </h2>
+                            </div>
+                            
+                             <div class="sixteen columns " style="margin:30px 0px">
+                            <canvas id="trainer_score" width="700px" height="350"></canvas>
+                                <h2>Trainer Grade  </h2>
+                            </div>
+                                                        
+
+                             <div class="sixteen columns " style="margin:30px 0px">
+                            <canvas id="jockey_score" width="700px" height="350"></canvas>
+                                <h2>Jockey Grade  </h2>
+                            </div>
+                            
+                            <div class="sixteen columns " style="margin:30px 0px">
+                            <canvas id="draw" width="700px" height="350"></canvas>
+                                <h2>Draw Placed  </h2>
+                            </div>
+                            
+                            <div class="sixteen columns " style="margin:30px 0px">
+                            <canvas id="veterinary" width="350px" height="350"></canvas>
+                                <h2>Veterinary Record  (Top 3) </h2>
+                            </div>
+                        </div>
+                    </div><!-- lower content end -->
+                </div><!-- center container end -->
+            </div><!-- center block end -->
+        </div><!-- services end -->
+       

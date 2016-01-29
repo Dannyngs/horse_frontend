@@ -1,0 +1,138 @@
+@charset "utf-8";
+/* CSS Document */
+
+
+.teaser-text-animation span {
+color: #009966;
+}
+
+#intro-title {
+color: #009966;
+}
+
+a {
+color: #009966;
+}
+
+p a {
+color: #009966;
+}
+
+.awesome {
+color: #009966;
+}
+
+ul.mainNav li a:hover {
+color: #009966;
+}
+
+ul.mainNav li a.active {
+color: #009966;
+}
+
+a:link, a:visited, a:active {
+color: #009966;
+}
+
+.curr {
+color: #009966;
+}
+
+li.curr {
+color: #009966;
+border-left: 3px solid #009966;
+}
+
+.menu-mobile a {
+color: #fff;
+}
+
+.menu-mobile a:hover {
+color: #009966;
+}
+
+.menu-mobile a.active {
+color: #009966;
+}
+
+.menu-mobile li ul a:hover {
+color: #009966;
+}
+
+.submit:after {
+background: #009966;
+}
+
+.success {
+color: #009966;
+}
+
+#form .error {
+color: #009966;
+}
+
+
+@-webkit-keyframes glow {
+    0% {
+		border-color: #009966;
+		box-shadow: 0 0 5px rgba(255,255,255,0.2), inset 0 0 5px rgba(255,255,255,0.1)
+		}	
+    100% {
+		border-color: #009966;
+		box-shadow: 0 0 20px rgba(255,255,255,0.6), inset 0 0 10px rgba(255,255,255,0.4)
+		}
+}
+@-moz-keyframes glow {
+    0% {
+		border-color: #009966;
+		box-shadow: 0 0 5px rgba(255,255,255,0.2), inset 0 0 5px rgba(255,255,255,0.1)
+    }	
+    100% {
+		border-color: #009966;
+		box-shadow: 0 0 20px rgba(255,255,255,0.6), inset 0 0 10px rgba(255,255,255,0.4)
+    }
+}
+@-o-keyframes glow {
+    0% {
+		border-color: #009966;
+		box-shadow: 0 0 5px rgba(255,255,255,0.2), inset 0 0 5px rgba(255,255,255,0.1)
+    }	
+    100% {
+		border-color: #009966;
+		box-shadow: 0 0 20px rgba(255,255,255,0.6), inset 0 0 10px rgba(255,255,255,0.4)
+    }
+}
+@-ms-keyframes glow {
+    0% {
+		border-color: #009966;
+		box-shadow: 0 0 5px rgba(255,255,255,0.2), inset 0 0 5px rgba(255,255,255,0.1)
+    }	
+    100% {
+		border-color: #009966;
+		box-shadow: 0 0 20px rgba(255,255,255,0.6), inset 0 0 10px rgba(255,255,255,0.4)
+    }
+}
+@keyframes glow {
+    0% {
+		border-color: #009966;
+		box-shadow: 0 0 5px rgba(255,255,255,0.2), inset 0 0 5px rgba(255,255,255,0.1)
+    }	
+    100% {
+		border-color: #009966;
+		box-shadow: 0 0 20px rgba(255,255,255,0.6), inset 0 0 10px rgba(255,255,255,0.4)
+    }
+}
+
+
+#subscribe input#submit {
+background: #009966;
+border: 1px solid #009966;
+}
+
+.subscribesuccess {
+color: #009966;
+}
+
+.options-head {
+background: #009966;
+}

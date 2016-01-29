@@ -1,0 +1,138 @@
+@charset "utf-8";
+/* CSS Document */
+
+
+.teaser-text-animation span {
+color: #ffc200;
+}
+
+#intro-title {
+color: #ffc200;
+}
+
+a {
+color: #ffc200;
+}
+
+p a {
+color: #ffc200;
+}
+
+.awesome {
+color: #ffc200;
+}
+
+ul.mainNav li a:hover {
+color: #ffc200;
+}
+
+ul.mainNav li a.active {
+color: #ffc200;
+}
+
+a:link, a:visited, a:active {
+color: #ffc200;
+}
+
+.curr {
+color: #ffc200;
+}
+
+li.curr {
+color: #ffc200;
+border-left: 3px solid #ffc200;
+}
+
+.menu-mobile a {
+color: #000;
+}
+
+.menu-mobile a:hover {
+color: #ffc200;
+}
+
+.menu-mobile a.active {
+color: #ffc200;
+}
+
+.menu-mobile li ul a:hover {
+color: #ffc200;
+}
+
+.submit:after {
+background: #ffc200;
+}
+
+.success {
+color: #ffc200;
+}
+
+#form .error {
+color: #ffc200;
+}
+
+
+@-webkit-keyframes glow {
+    0% {
+		border-color: #ffc200;
+		box-shadow: 0 0 5px rgba(0,0,0,0.2), inset 0 0 5px rgba(0,0,0,0.1)
+		}	
+    100% {
+		border-color: #ffc200;
+		box-shadow: 0 0 20px rgba(0,0,0,0.6), inset 0 0 10px rgba(0,0,0,0.4)
+		}
+}
+@-moz-keyframes glow {
+    0% {
+		border-color: #ffc200;
+		box-shadow: 0 0 5px rgba(0,0,0,0.2), inset 0 0 5px rgba(0,0,0,0.1)
+    }	
+    100% {
+		border-color: #ffc200;
+		box-shadow: 0 0 20px rgba(0,0,0,0.6), inset 0 0 10px rgba(0,0,0,0.4)
+    }
+}
+@-o-keyframes glow {
+    0% {
+		border-color: #ffc200;
+		box-shadow: 0 0 5px rgba(0,0,0,0.2), inset 0 0 5px rgba(0,0,0,0.1)
+    }	
+    100% {
+		border-color: #ffc200;
+		box-shadow: 0 0 20px rgba(0,0,0,0.6), inset 0 0 10px rgba(0,0,0,0.4)
+    }
+}
+@-ms-keyframes glow {
+    0% {
+		border-color: #ffc200;
+		box-shadow: 0 0 5px rgba(0,0,0,0.2), inset 0 0 5px rgba(0,0,0,0.1)
+    }	
+    100% {
+		border-color: #ffc200;
+		box-shadow: 0 0 20px rgba(0,0,0,0.6), inset 0 0 10px rgba(0,0,0,0.4)
+    }
+}
+@keyframes glow {
+    0% {
+		border-color: #ffc200;
+		box-shadow: 0 0 5px rgba(0,0,0,0.2), inset 0 0 5px rgba(0,0,0,0.1)
+    }	
+    100% {
+		border-color: #ffc200;
+		box-shadow: 0 0 20px rgba(0,0,0,0.6), inset 0 0 10px rgba(0,0,0,0.4)
+    }
+}
+
+
+#subscribe input#submit {
+background: #ffc200;
+border: 1px solid #ffc200;
+}
+
+.subscribesuccess {
+color: #ffc200;
+}
+
+.options-head {
+background: #ffc200;
+}
