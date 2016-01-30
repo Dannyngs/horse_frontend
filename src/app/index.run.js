@@ -20,9 +20,9 @@
                 }
                 
              }
-            
-            if (toState.templateUrl === 'app/main/app.html' && UserService.isLoggedIn()) {
-                
+            // console.log('yes'+fromState.templateUrl)
+            if (toState.templateUrl === 'app/main/login.html' && UserService.isLoggedIn()) {
+               
                 $location.path('/app')
             }
             
