@@ -28,18 +28,24 @@
                                 
 
    
-    <div ng-hide="isready"><h2>Loading race data , please wait ...</h2></div>
-    <form class="ui form" style="    width: 300px;" ng-show="isready">
-             <h2>Please select a race</h2>
+    <div ng-hide="raceLoadHidden"><h2>Loading race data , please wait ...</h2></div>
+    <form class="ui form" style="width: 300px;" ng-show="raceSelect">
+             <h2>{{buttonText}}</h2>
   <select class="ui fluid dropdown"  style="text-align:center;" ng-model="selectedlink">
         <option ng-repeat="race in races" value="{{race.link}}">{{race.no}}</option>
    
       </select>
  
-   <button ng-click="calc()" class="submit white-border" style="margin-top:20px;" type="submit">{{buttonText}}</button>
+   <button ng-click="calc()" class="submit white-border" style="margin-top:20px;" type="submit">Get Score</button>
      
     </form>
-     
+     <div ng-show="raceNoData">
+        <h2> The Data be available on:</h2>
+         <p style="font-size:18px;">
+         Mondays (for Wednesday meetings except special race meetings) <br>
+        Thursdays (for Saturday or Sunday meetings except special race meetings).
+         </p>                            
+    </div>
 
  
 
@@ -56,11 +62,20 @@
                             <div class="sixteen columns">
                                 <div class="divider-right-bottom"></div>
                             </div><!-- divider right bottom end -->
+                            
                            
                            
                         </div><!-- container end -->
+                        <!-- closer start -->
+                        <div class="fire-closer">
+                            <a class="menu-state" ng-click="UserLogout()" id="fire-about-closer"><img alt="Closer" src="assets/images/closer.png"></a>
+                        </div><!-- closer end -->
                         <div class="container center" ng-show="isResultReady" style="padding:30px 0px">
-                            <h2>Recommended Bets </h2>
+                              
+                             <div class="sixteen columns">
+                            <h2>{{raceinfo}}</h2>
+                            </div>
+                            
                             <div class="five columns " style="margin:30px 0px">
                             <canvas id="top1" width="200" height="200"></canvas>
                                 <h2>{{horseList[0].horse}} : {{horseList[0].grade}}</h2>
@@ -73,7 +88,9 @@
                             <canvas id="top3" width="200" height="200"></canvas>
                                 <h2>{{horseList[2].horse}} : {{horseList[2].grade}}</h2>
                             </div>
-                              
+                              <div class="sixteen columns">
+                               <h2>Top 3 (Recommended Bets)</h2>
+                            </div>
                             <div class="sixteen columns " style="margin:30px 0px">
                             <canvas id="myChart" width="700px" height="350"></canvas>
                                 <h2>Horse Grade  </h2>

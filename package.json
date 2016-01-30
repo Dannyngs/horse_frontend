@@ -1,7 +1,9 @@
 {
   "name": "horseFrontend",
   "version": "0.0.0",
-  "dependencies": {},
+  "dependencies": {
+    "angular-toastr": "^1.7.0"
+  },
   "scripts": {
     "test": "gulp test"
   },

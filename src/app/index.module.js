@@ -2,7 +2,7 @@
   'use strict';
 
   angular
-    .module('horseFrontend', ['ui.router', 'toastr'])
+    .module('horseFrontend', ['ui.router', 'toastr','ipCookie'])
    
       
       
@@ -29,7 +29,7 @@
 
            var top1data =  [
 	{
-		value: 100-data[0].grade,
+		value: (100-data[0].grade).toFixed(2),
 		color:"rgba(220,220,220,0.2)",
         
         labelFontSize : '16'
@@ -44,7 +44,7 @@
 ];
            var top2data =  [
 	{
-		value: 100-data[1].grade,
+		value: (100-data[1].grade).toFixed(2),
 		color:"rgba(220,220,220,0.2)"
 	},
     {
@@ -55,7 +55,7 @@
 ];
            var top3data =  [
 	{
-		value: 100-data[2].grade,
+		value: (100-data[2].grade).toFixed(2),
 		color:"rgba(220,220,220,0.2)"
 	},
     {
@@ -283,7 +283,6 @@
            for(var i=0;i<data.length;i++){
               dt.push(data[i].draw_placed||null);
            }
-           console.log(dt)
            
            
            var ctx = document.getElementById("draw").getContext("2d");
@@ -358,6 +357,64 @@
       
       
   }
-  });
+  })
+      .factory('SocketService',  function() {
+        var socket = io.connect('http://52.74.233.54:80')
+        socket.on("connection",function(){
+            
+            console.log('connected to the server')
+        })
+        
+        return {
+            emit:function(name,data){
+                socket.emit(name,data)
+            },
+            loginok:function(callball){
+                 socket.on('loginok',callball)
+            },
+            loginfailed:function(callball){
+                socket.on('loginfailed',callball)
+            },
+            logoutok:function(callball){
+                 socket.on('logoutok',callball)
+            },
+            logoutfailed:function(callball){
+                socket.on('logoutfailed',callball)
+            }
+            
+            
+        };
+	})
+      .factory('UserService', ['$rootScope', 'ipCookie', function($rootScope, ipCookie) {
+
+		
+		
+        return {
+            
+			get: function() {
+				var user = $rootScope.current_user
+                    return user
+			},
+			login: function(user) {
+				console.log('*LOGGED IN ***')
+                $rootScope.current_user=user
+				ipCookie('current_user', user.username)
+              
+				
+			},
+			logout: function() {
+				console.log('*LOGGED OUT ***')
+               $rootScope.current_user=null
+               ipCookie.remove('current_user')
+               
+                
+
+			},
+			isLoggedIn: function() {
+                return $rootScope.current_user||false
+			}
+		}
+
+	}])
 
 })();

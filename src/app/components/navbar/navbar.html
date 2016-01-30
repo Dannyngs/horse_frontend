@@ -1,13 +1,45 @@
-<nav class="navbar">
-  <a href="https://github.com/Swiip/generator-gulp-angular">Gulp Angular</a>
-
-  <ul>
-    <li class="active"><a ng-href="#">Home</a></li>
-    <li><a ng-href="#">About</a></li>
-    <li><a ng-href="#">Contact</a></li>
-  </ul>
-
-  <ul class="acme-navbar-text">
-    <li>Application was created {{ vm.relativeDate }}.</li>
-  </ul>
-</nav>
+<!-- menu start -->
+        <nav class="menu">
+            <ul class="mainNav">
+                <li class="curr">
+                    <a class="menu-state active" href="/" ><span class="navNumber">00</span> <span class="navTitle">Home</span><br>
+                    Get started</a>
+                </li>
+                <li>
+                    <a class="menu-state" href="about" ><span class="navNumber">01</span> <span class="navTitle">ABOUT</span><br>
+                    Who we are</a>
+                </li>
+                <li>
+                    <a class="menu-state" href="/login" ><span class="navNumber">02</span> <span class="navTitle">App</span><br>
+                    Get started</a>
+                </li>
+                
+                 <li>
+                    <a class="menu-state" href="/contact" ><span class="navNumber">04</span> <span class="navTitle">Contact</span><br>
+                    Find Us</a>
+                </li>
+                
+            </ul>
+        </nav><!-- menu end -->
+        <!-- menu mobile start -->
+        <nav class="menu-mobile">
+            <ul>
+                <li>
+                    <ul>
+                        <li class="lifting-first">
+                            <a class="menu-state active" href="#" id="fire-home-mobile">Home</a>
+                        </li>
+                        <li class="lifting">
+                            <a class="menu-state" href="#" id="fire-about-mobile">About</a>
+                        </li>
+                        <li class="lifting">
+                            <a class="menu-state" href="#" id="fire-services-mobile">Services</a>
+                        </li>
+                        <li class="lifting">
+                            <a class="menu-state" href="#" id="fire-contact-mobile">Contact</a>
+                        </li>
+                    </ul>
+                    <a class="menu-mobile-trigger" href="#"><span class="menu-icon"></span></a>
+                </li>
+            </ul>
+        </nav><!-- menu mobile end -->

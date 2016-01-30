@@ -5,6 +5,7 @@
     <title>horseFrontend</title>
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width">
+    <base href="/"/>
     <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
 
     <!-- build:css({.tmp/serve,src}) styles/vendor.css -->
@@ -50,50 +51,9 @@
         <!-- preload content start -->
         <div class="preload-content">
         </div><!-- preload content end -->
-        <!-- menu start -->
-        <nav class="menu">
-            <ul class="mainNav">
-                <li class="curr">
-                    <a class="menu-state active" href="/" ><span class="navNumber">00</span> <span class="navTitle">Home</span><br>
-                    Get started</a>
-                </li>
-                <li>
-                    <a class="menu-state" href="#/about" ><span class="navNumber">01</span> <span class="navTitle">ABOUT</span><br>
-                    Who we are</a>
-                </li>
-                <li>
-                    <a class="menu-state" href="#/service" ><span class="navNumber">02</span> <span class="navTitle">App</span><br>
-                    App(beta)</a>
-                </li>
-                 <li>
-                    <a class="menu-state" href="#/contact" ><span class="navNumber">02</span> <span class="navTitle">Contact</span><br>
-                    Find Us</a>
-                </li>
-                
-            </ul>
-        </nav><!-- menu end -->
-        <!-- menu mobile start -->
-        <nav class="menu-mobile">
-            <ul>
-                <li>
-                    <ul>
-                        <li class="lifting-first">
-                            <a class="menu-state active" href="#" id="fire-home-mobile">Home</a>
-                        </li>
-                        <li class="lifting">
-                            <a class="menu-state" href="#" id="fire-about-mobile">About</a>
-                        </li>
-                        <li class="lifting">
-                            <a class="menu-state" href="#" id="fire-services-mobile">Services</a>
-                        </li>
-                        <li class="lifting">
-                            <a class="menu-state" href="#" id="fire-contact-mobile">Contact</a>
-                        </li>
-                    </ul>
-                    <a class="menu-mobile-trigger" href="#"><span class="menu-icon"></span></a>
-                </li>
-            </ul>
-        </nav><!-- menu mobile end -->
+      
+      <racenav></racenav>
+        
     <div ui-view></div>
 
     <!-- build:js(src) scripts/vendor.js -->
@@ -111,19 +71,20 @@
              <script type="text/javascript" src="app/index.constants.js"></script>
              <script type="text/javascript" src="app/main/main.controller.js"></script>
              <script type="text/javascript" src="app/main/app.controller.js"></script>
+                   <script type="text/javascript" src="app/main/login.controller.js"></script>
+                   <script type="text/javascript" src="app/components/navbar/navbar.directive.js"></script>
+
 
        <script type="text/javascript" src="app/js/jquery-1.11.2.min.js"></script>
         <script type="text/javascript" src="app/js/velocity.min.js"></script>
         <script type="text/javascript" src="app/js/jquery.kenburnsy.min.js"></script>
-       
+           <script src="../bower_components/socket.io-client/socket.io.js"></script>
+
         <script type="text/javascript" src="app/js/jquery.nicescroll.3.5.4.js"></script>
         <script type="text/javascript" src="app/js/sky.js"></script>
         <script type="text/javascript" src="app/js/form-subscribe.js"></script>
         <script type="text/javascript" src="app/js/form-contact.js"></script>
-        <script type="text/javascript" src="app/knob/countdown.js"></script>
-        <script type="text/javascript" src="app/knob/jquery.knob.js"></script>
       
-        <script type="text/javascript" src="app/knob/knob.js"></script>
         <script type="text/javascript" src="app/js/particles.js"></script>
         <script type="text/javascript" src="app/js/app.js"></script>
       

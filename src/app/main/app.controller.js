@@ -8,16 +8,24 @@
   /** @ngInject */
   function AppController($scope, toastr,$http,chart) {
   
-
-
+var url='http://horseback-dev.ap-southeast-1.elasticbeanstalk.com/';
+//var url='http://localhost/';
  
      
     $http({
   method: 'GET',
-  url: 'http://horseback-dev.ap-southeast-1.elasticbeanstalk.com/fetchRace'
+  url: url+'fetchRace/'
 }).then(function successCallback(response) {
-       $scope.isready=true;  
-     $scope.races=response.data;
+       $scope.raceLoadHidden=true;
+    $scope.races=response.data;
+        if($scope.races.length==0)
+            $scope.raceNoData=true;
+        else
+            {
+              
+                $scope.raceSelect=true; 
+            }
+        
   }, function errorCallback(response) {
     toastr.error('Error','Cannot connect to the server,please try it later')
   });
@@ -29,49 +37,53 @@
       
   
       
-      $scope.buttonText ='Get Score';
-$scope.calc=function(){
+      $scope.buttonText ='Please select a race';
+      $scope.calc=function(){
     
     if(!$scope.selectedlink){toastr.error('Please Select a race first','Error');return;}
-     $scope.buttonText='Calculating.....';
+     $scope.buttonText='Analyzing ...';
       $scope.isResultReady= true;
     
        $http({
   method: 'POST',
-  url: 'http://horseback-dev.ap-southeast-1.elasticbeanstalk.com/',
+  url: url,
  data:{link:$scope.selectedlink}
 }).then(function successCallback(response) {
-         console.log(response.data)
-        $scope.buttonText ='Get Score';
-         $scope.horseList = response.data;       
-            console.log(response.data.length)
+        var horseList = response.data.hl; 
+        $scope.raceinfo=response.data.ri;
+           $scope.horseList =horseList;
+            console.log(horseList)
 
-           if(response.data.length==0)
+
+           if(horseList.length==0)
            {toastr.error('Failed to get score,try agian please!')
-           $scope.buttonText ='Get Score';
+           $scope.buttonText ='Sorry ! Could not get any data, please try again.';
             console.log('nothing')
-            return;
+           return;
            }
-          
+           
+            $scope.buttonText ='Please select a race';
+                  
+           
            var horse_name =[];
-           for(var i=0;i<response.data.length;i++){
-              horse_name.push(response.data[i].horse);
+           for(var i=0;i<horseList.length;i++){
+              horse_name.push(horseList[i].horse);
            }
          var horse_grade =[];
-           for(var i=0;i<response.data.length;i++){
-              horse_grade.push(response.data[i].grade);
+           for(var i=0;i<horseList.length;i++){
+              horse_grade.push(horseList[i].grade);
            }   
            
            chart.drawBar(horse_name,horse_grade);
-           chart.drawTrainer(response.data);
-             chart.drawJockey(response.data);
-           chart.drawHorseWeight(response.data);
-          chart.drawWeight(response.data);
-            chart.drawTop(response.data);
-            chart.drawDraw(response.data);
-            chart.drawVeterinary(response.data);
-      
-           
+           chart.drawTrainer(horseList);
+             chart.drawJockey(horseList);
+           chart.drawHorseWeight(horseList);
+          chart.drawWeight(horseList);
+            chart.drawTop(horseList);
+            chart.drawDraw(horseList);
+            chart.drawVeterinary(horseList);
+          
+          // $scope.$apply();
 
            
            
