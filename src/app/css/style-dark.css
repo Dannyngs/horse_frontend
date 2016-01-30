@@ -128,7 +128,6 @@ height: 100%;
 }
 
 #intro-top-line {
-background: url(../images/intro-top-line.png) no-repeat right;
 width: auto;
 height: 40px;
 }
@@ -148,7 +147,6 @@ padding: 7px 0 0 0;
 }
 
 #intro-bottom-line {
-background: url(../images/intro-bottom-line.png) no-repeat left;
 width: auto;
 height: 40px;
 margin: 5px 0 0 0;
