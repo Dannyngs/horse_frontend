@@ -36,7 +36,7 @@
 	},
     {
 		value: data[0].grade,
-		color:"rgba(220,220,220,0.9)",
+		color:"rgba(46, 204, 113,0.8)",
        
         labelFontSize : '16'
 	}
@@ -49,7 +49,7 @@
 	},
     {
 		value: data[1].grade,
-		color:"rgba(220,220,220,0.9)"
+		color:"rgba(241, 196, 15,0.8)"
 	}
 
 ];
@@ -60,7 +60,7 @@
 	},
     {
 		value: data[2].grade,
-		color:"rgba(220,220,220,0.9)"
+		color:"rgba(52, 152, 219,0.8)"
 	}
 
 ];
@@ -95,10 +95,10 @@
     datasets: [
         {
             label: "My First dataset",
-            fillColor: "rgba(220,220,220,0.6)",
-            strokeColor: "rgba(220,220,220,1)",
-            highlightFill: "rgba(220,220,220,0.75)",
-            highlightStroke: "rgba(220,220,220,1)",
+            fillColor: "rgba(39, 174, 96,0.6)",
+            strokeColor: "rgba(39, 174, 96,1.0)",
+            highlightFill: "rgba(39, 174, 96,0.9)",
+            highlightStroke: "rgba(39, 174, 96,1.0)",
             data: dt
         }
     ]
@@ -136,10 +136,10 @@
     datasets: [
         {
             label: "My First dataset",
-            fillColor: "rgba(220,220,220,1)",
-            strokeColor: "rgba(220,220,220,1)",
-            highlightFill: "rgba(220,220,220,0.75)",
-            highlightStroke: "rgba(220,220,220,1)",
+            fillColor: "rgba(231, 76, 60,0.6)",
+            strokeColor: "rgba(231, 76, 60,1.0)",
+            highlightFill: "rgba(231, 76, 60,0.8)",
+            highlightStroke: "rgba(231, 76, 60,1.0)",
             data: dt
         }
     ]
@@ -175,10 +175,10 @@
     datasets: [
         {
             label: "My First dataset",
-            fillColor: "rgba(220,220,220,1)",
-            strokeColor: "rgba(220,220,220,1)",
-            pointColor : "rgba(220,220,220,1)",
-			pointStrokeColor : "#fff",
+            fillColor: "rgba(142, 68, 173,0.6)",
+            strokeColor: "rgba(142, 68, 173,1.0)",
+             highlightFill: "rgba(142, 68, 173,0.8)",
+            highlightStroke: "rgba(142, 68, 173,1.0)",
             data: dt
         }
     ]
@@ -214,10 +214,10 @@
     datasets: [
         {
             label: "My First dataset",
-            fillColor: "rgba(220,220,220,0.6)",
-            strokeColor: "rgba(220,220,220,1)",
-            highlightFill: "rgba(220,220,220,0.75)",
-            highlightStroke: "rgba(220,220,220,1)",
+            fillColor: "rgba(243, 156, 18,0.6)",
+            strokeColor: "rgba(243, 156, 18,1.0)",
+            highlightFill: "rgba(243, 156, 18,0.8)",
+            highlightStroke: "rgba(243, 156, 18,1.0)",
             data: dt
         }
     ]
@@ -253,10 +253,10 @@
     datasets: [
         {
             label: "My First dataset",
-            fillColor: "rgba(220,220,220,0.6)",
-            strokeColor: "rgba(220,220,220,1)",
-            highlightFill: "rgba(220,220,220,0.75)",
-            highlightStroke: "rgba(220,220,220,1)",
+            fillColor: "rgba(41, 128, 185,0.6)",
+            strokeColor: "rgba(41, 128, 185,1.0)",
+            highlightFill: "rgba(41, 128, 185,0.9)",
+            highlightStroke: "rgba(41, 128, 185,1.0)",
             data: dt
         }
     ]
@@ -321,17 +321,17 @@
              var dt =  [
 	{
 		value: data[0].veterinary,
-		color:"rgba(220,220,220,0.8)",
+		color:"rgba(26, 188, 156,0.8)",
         label:data[0].horse
 	},
     {
 		value: data[1].veterinary,
-		color:"rgba(220,220,220,0.5)",
+		color:"rgba(231, 76, 60,0.8)",
         label:data[1].horse
 	},
     {
 		value: data[2].veterinary,
-		color:"rgba(220,220,220,0.2)",
+		color:"rgba(241, 196, 15,0.8)",
         label:data[2].horse
 	}
 

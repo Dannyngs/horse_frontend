@@ -32,7 +32,7 @@
         templateUrl: 'app/main/app.html' ,
         controller: 'AppController',
         controllerAs: 'app',
-         accessRequired: true
+         accessRequired: false
       })
     .state('contact', {
         url: '/contact',
