@@ -56,9 +56,9 @@ var url='http://horseback-dev.ap-southeast-1.elasticbeanstalk.com/';
 
 
            if(horseList.length==0)
-           {toastr.error('Failed to get score,try agian please!')
-           $scope.buttonText ='Sorry ! Could not get any data, please try again.';
-            console.log('nothing')
+           {toastr.error('Failed to get any data!')
+           $scope.buttonText ='Sorry ! Could not get any data yet. Please come back later.';
+             $scope.isResultReady= false;
            return;
            }
            

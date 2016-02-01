@@ -29,8 +29,9 @@
 
    
     <div ng-hide="raceLoadHidden"><h2>Loading race data , please wait ...</h2></div>
+                                  <h2 ng-show="raceSelect">{{buttonText}}</h2>
     <form class="ui form" style="width: 300px;" ng-show="raceSelect">
-             <h2>{{buttonText}}</h2>
+           
   <select class="ui fluid dropdown"  style="text-align:center;" ng-model="selectedlink">
         <option ng-repeat="race in races" value="{{race.link}}">{{race.no}}</option>
    
