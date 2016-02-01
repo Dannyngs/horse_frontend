@@ -359,7 +359,11 @@
   }
   })
       .factory('SocketService',  function() {
-        var socket = io.connect('http://52.74.233.54:80')
+       //var socket = io.connect('http://52.74.233.54:80')//use dream project
+      var socket = io.connect('http://ec2-54-169-239-145.ap-southeast-1.compute.amazonaws.com')
+             //var socket = io.connect('http://localhost/')
+
+
         socket.on("connection",function(){
             
             console.log('connected to the server')
