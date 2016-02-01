@@ -9,7 +9,7 @@
   function AppController($scope, toastr,$http,chart) {
   
 var url='http://horseback-dev.ap-southeast-1.elasticbeanstalk.com/';
-//var url='http://localhost/';
+
  
      
     $http({
