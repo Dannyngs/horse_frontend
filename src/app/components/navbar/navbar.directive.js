@@ -62,12 +62,19 @@
  	}
         
         
-$rootScope.isAppInEng=function()
+$rootScope.currentLang=function()
 {
     return $translate.use();
     
 }
-    
+  $rootScope.changeLanguage = function (key) {
+       
+    $translate.use(key);
+  };
+       
+       
+       
+  
   }
   
   

@@ -8,8 +8,8 @@
   /** @ngInject */
   function AppController($scope, toastr,$http,chart,$translate) {
   
-//var url='http://horseback-dev.ap-southeast-1.elasticbeanstalk.com/';
-var url='http://localhost/';
+var url='http://horseback-dev.ap-southeast-1.elasticbeanstalk.com/';
+//var url='http://localhost/';
 
  
      //Get Race info
@@ -42,11 +42,11 @@ var url='http://localhost/';
       
   
       
-      $scope.buttonText ='Please select a race';
+      $scope.buttonText ='APP_SELECT_RACE';
       $scope.calc=function(){
     
     if(!$scope.selectedlink){toastr.error('Please Select a race first');return;}
-     $scope.buttonText='Analyzing ...';
+     $scope.buttonText='APP_ANALYZING';
       $scope.isResultReady= true;
     
        $http({
@@ -67,7 +67,7 @@ var url='http://localhost/';
            return;
            }
            
-            $scope.buttonText ='Please select a race';
+            $scope.buttonText ='APP_SELECT_RACE';
                   
            
            var horse_name =[];
@@ -86,7 +86,7 @@ var url='http://localhost/';
           chart.drawWeight(horseList);
             chart.drawTop(horseList);
             chart.drawDraw(horseList);
-            chart.drawVeterinary(horseList);
+            //chart.drawVeterinary(horseList);
           
           // $scope.$apply();
 

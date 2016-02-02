@@ -28,8 +28,8 @@
                                 
 
    
-    <div ng-hide="raceLoadHidden"><h2>Loading race data , please wait ...</h2></div>
-                                  <h2 ng-show="raceSelect">{{buttonText}}</h2>
+    <div ng-hide="raceLoadHidden"><h2 translate="APP_LOADING"></h2></div>
+                                  <h2 ng-show="raceSelect">{{buttonText|translate }}</h2>
     <form class="ui form" style="width: 300px;" ng-show="raceSelect">
            
   <select class="ui fluid dropdown"  style="text-align:center;" ng-model="selectedlink">
@@ -37,14 +37,13 @@
    
       </select>
  
-   <button ng-click="calc()" class="submit white-border" style="margin-top:20px;" type="submit">Get Score</button>
+   <button ng-click="calc()" class="submit white-border" style="margin-top:20px;" type="submit" translate="APP_GET_SCORE"></button>
      
     </form>
      <div ng-show="raceNoData">
-        <h2> The Data be available on:</h2>
-         <p style="font-size:18px;">
-         Mondays (for Wednesday meetings except special race meetings) <br>
-        Thursdays (for Saturday or Sunday meetings except special race meetings).
+        <h2 translate="APP_NO_DATA_TITLE"></h2>
+         <p translate="APP_NO_DATA_CONTENT" style="font-size:18px;">
+         
          </p>                            
     </div>
 
@@ -90,43 +89,43 @@
                                 <div class="top-horse-title">{{horseList[2].horse}} ({{horseList[2].no}})  : {{horseList[2].grade}}</div>
                             </div>
                               <div class="sixteen columns">
-                               <h2>Top 3 (Recommended Bets)</h2>
+                               <h2 translate="TOP3">Top 3 (Recommended Bets)</h2>
                             </div>
                             <div class="sixteen columns " style="margin:30px 0px">
                             <canvas id="myChart" width="700px" height="350"></canvas>
-                                <h2>Horse Grade  </h2>
+                                <h2 translate="HG">Horse Grade  </h2>
                             </div>
                             
                            
                              <div class="sixteen columns " style="margin:30px 0px">
                             <canvas id="horse_weight" width="700px" height="350"></canvas>
-                                <h2>Horse Weight (lb)  </h2>
+                                <h2 translate="HW">Horse Weight (lb)  </h2>
                             </div>
                             
                             <div class="sixteen columns " style="margin:30px 0px">
                             <canvas id="weight" width="700px" height="350"></canvas>
-                                <h2> Weight Ranking (lb) </h2>
+                                <h2 translate="WR"> Weight Ranking (lb) </h2>
                             </div>
                             
                              <div class="sixteen columns " style="margin:30px 0px">
                             <canvas id="trainer_score" width="700px" height="350"></canvas>
-                                <h2>Trainer Grade  </h2>
+                                <h2 translate="TG">Trainer Grade  </h2>
                             </div>
                                                         
 
                              <div class="sixteen columns " style="margin:30px 0px">
                             <canvas id="jockey_score" width="700px" height="350"></canvas>
-                                <h2>Jockey Grade  </h2>
+                                <h2 translate="JG">Jockey Grade  </h2>
                             </div>
                             
                             <div class="sixteen columns " style="margin:30px 0px">
                             <canvas id="draw" width="700px" height="350"></canvas>
-                                <h2>Draw Placed  </h2>
+                                <h2 translate="DP">Draw Placed  </h2>
                             </div>
                             
                             <div class="sixteen columns " style="margin:30px 0px">
                             <canvas id="veterinary" width="350px" height="350"></canvas>
-                                <h2>Veterinary Record  (Top 3) </h2>
+                                
                             </div>
                         </div>
                     </div><!-- lower content end -->

@@ -25,8 +25,16 @@
                     <a class="menu-state" href="#contact" ><span class="navNumber">04</span> <span class="navTitle" translate="CONTACT">Contact</span><br>
                     Find Us</a>
                 </li>
+                 <li ng-show="currentLang()=='english'">
+                    <a ng-click="changeLanguage('chinese')" class="menu-state"  ><span class="navTitle" >中文版</span></a>
+                </li>
+                <li ng-show="currentLang()=='chinese'" >
+                   <a  ng-click="changeLanguage('english')" class="menu-state"  ><span class="navTitle" >English Version</span></a> 
+                </li>
+                  
                  
-                
+                                 
+
                 
                 
             </ul>

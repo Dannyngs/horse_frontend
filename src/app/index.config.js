@@ -40,11 +40,23 @@
     CONTACT_GC2:'+852 5663 2361 <br>',
     CONTACT_GC3:' Hang Seng Bank: 209-445142-668<br> Bank of China: 012-35510088660<br>Hong Kong Jockey Club: 13830359<br><br>',
     CONTACT_GC4:'Bank of China in Macao: 010-110409-370',
-                             
-                                
-    
     TERMS:'Terms',
-        TERMS_TITLE:'Terms and conditions for services provided by RACING PRO'
+    TERMS_TITLE:'Terms and conditions for services provided by RACING PRO',
+    APP_LOADING:'Loading race data , please wait ...',
+    APP_NO_DATA_TITLE:'The Data be available on:',
+    APP_NO_DATA_CONTENT:' Mondays (for Wednesday meetings except special race meetings) <br>Thursdays (for Saturday or Sunday meetings except special race meetings).',
+    APP_GET_SCORE:"GET SCORE",
+    APP_ANALYZING:"Anylyzing...",
+    APP_SELECT_RACE:"Please select a race",
+    APP_NO_DATA:"Sorry ! Could not get any data yet. Please come back later",
+    TOP3:'Top 3 (Recommended Bets)',
+    HG:'Horse Grade',
+    HW:'Horse Weight (lb)',
+    WR:'Weight Ranking (lb)',
+    TG:'Trainer Grade',
+    JG:'Jockey Grade',
+    DP:'Draw Placed'
+    
     
         
   });
@@ -70,6 +82,21 @@
     CONTACT_GC2:'+852 5663 2361 <br>',
     CONTACT_GC3:' 恆生銀行 : 209-445142-668<br> 中國銀行 : 012-35510088660<br>香港賽馬會戶口 : 13830359<br><br>',
     CONTACT_GC4:'澳門中國銀行 : 010-110409-370',
+    APP_LOADING:'正在加載數據，請稍後......',
+    APP_NO_DATA_TITLE:'The Data be available on:',
+    APP_NO_DATA_CONTENT:' Mondays (for Wednesday meetings except special race meetings) <br>Thursdays (for Saturday or Sunday meetings except special race meetings).' ,
+      APP_GET_SCORE:"分析",
+    APP_ANALYZING:"正在分析數據...",
+    APP_SELECT_RACE:"請選擇賽事",
+    APP_NO_DATA:"系統正在分析賽事，暫未能提供賽事分析結果，請等等再試",
+    TOP3:'前3名 (建議投注)',
+    HG:'馬匹評分',
+    HW:'馬匹體重 (磅)',
+    WR:'馬匹負磅 (磅)',
+    TG:'練馬師評分',
+    JG:'騎師評分',
+    DP:'檔位評分'
+      
   });
   $translateProvider.preferredLanguage('english');
 
