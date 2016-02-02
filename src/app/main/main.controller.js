@@ -6,8 +6,11 @@
     .controller('MainController', MainController);
 
   /** @ngInject */
-  function MainController($timeout, toastr) {
-  
+  function MainController($scope,$timeout, toastr,$translate) {
+  $scope.changeLanguage = function (key) {
+       
+    $translate.use(key);
+  };
 
     
   }

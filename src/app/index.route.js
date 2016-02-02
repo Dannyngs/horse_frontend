@@ -20,6 +20,16 @@
         templateUrl: 'app/main/about.html',
          accessRequired: false
       })
+     .state('terms', {
+        url: '/terms',
+        templateUrl: 'app/main/terms.html',
+         accessRequired: false
+      })
+    .state('terms_en', {
+        url: '/terms_en',
+        templateUrl: 'app/main/terms_en.html',
+         accessRequired: false
+      })
     .state('login', {
         url: '/login',
         templateUrl: 'app/main/login.html',

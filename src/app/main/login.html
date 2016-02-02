@@ -8,7 +8,7 @@
                     <div class="lower-content">
                         <!-- contact intro start -->
                         <div class="contact-intro">
-                            <h1>
+                            <h1 translate="LOGIN">
                                 Login
                             </h1>
                         </div><!-- contact intro end -->
@@ -36,7 +36,7 @@
                                     <form  id="form" method="post" name="send">
                                         <div class="holder">
                                             <div>
-                                                <input ng-model="username" class="requiredField name" id="userid" name="userid" placeholder="User ID" type="text">
+                                                <input ng-model="username" class="requiredField name" id="userid" name="userid" placeholder="ID" type="text">
                                             </div>
                                             <div>
                                                 <input ng-model="password" class="requiredField email" id="password" name="password" placeholder="Password" type="password">
@@ -46,7 +46,7 @@
                                         <div class="holder">
                                             
                                             <div>
-                                                <button ng-click="UserLogin()" class="submit white-border" data-hover="Submit" type="submit" value="Submit">Login</button>
+                                                <button translate="LOGINBUT" ng-click="UserLogin()" class="submit white-border" data-hover="Submit" type="submit" value="Submit">Login</button>
                                             </div>
                                         </div>
                                     </form>

@@ -2,7 +2,7 @@
   'use strict';
 
   angular
-    .module('horseFrontend', ['ui.router', 'toastr','ipCookie'])
+    .module('horseFrontend', ['ui.router', 'toastr','ipCookie','pascalprecht.translate'])
    
       
       

@@ -6,16 +6,19 @@
     .controller('AppController', AppController);
 
   /** @ngInject */
-  function AppController($scope, toastr,$http,chart) {
+  function AppController($scope, toastr,$http,chart,$translate) {
   
-var url='http://horseback-dev.ap-southeast-1.elasticbeanstalk.com/';
+//var url='http://horseback-dev.ap-southeast-1.elasticbeanstalk.com/';
+var url='http://localhost/';
 
  
-     
+     //Get Race info
     $http({
   method: 'GET',
   url: url+'fetchRace/'
-}).then(function successCallback(response) {
+})
+        .then(
+        function successCallback(response) {
        $scope.raceLoadHidden=true;
     $scope.races=response.data;
         if($scope.races.length==0)
@@ -26,9 +29,11 @@ var url='http://horseback-dev.ap-southeast-1.elasticbeanstalk.com/';
                 $scope.raceSelect=true; 
             }
         
-  }, function errorCallback(response) {
+  }, 
+        function errorCallback(response) {
     toastr.error('Error','Cannot connect to the server,please try it later')
-  });
+  }
+        );
       
  
        
@@ -40,14 +45,14 @@ var url='http://horseback-dev.ap-southeast-1.elasticbeanstalk.com/';
       $scope.buttonText ='Please select a race';
       $scope.calc=function(){
     
-    if(!$scope.selectedlink){toastr.error('Please Select a race first','Error');return;}
+    if(!$scope.selectedlink){toastr.error('Please Select a race first');return;}
      $scope.buttonText='Analyzing ...';
       $scope.isResultReady= true;
     
        $http({
   method: 'POST',
   url: url,
- data:{link:$scope.selectedlink}
+ data:{link:$scope.selectedlink,lang:$translate.use()}
 }).then(function successCallback(response) {
         var horseList = response.data.hl; 
         $scope.raceinfo=response.data.ri;
@@ -58,7 +63,7 @@ var url='http://horseback-dev.ap-southeast-1.elasticbeanstalk.com/';
            if(horseList.length==0)
            {toastr.error('Failed to get any data!')
            $scope.buttonText ='Sorry ! Could not get any data yet. Please come back later.';
-             $scope.isResultReady= false;
+           //  $scope.isResultReady= false;
            return;
            }
            
