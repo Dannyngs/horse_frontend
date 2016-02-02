@@ -1,0 +1,40 @@
+{
+  "name": "semantic-ui-form",
+  "description": "Form - Semantic UI",
+  "homepage": "http://www.semantic-ui.com",
+  "author": {
+    "name": "Jack Lukic",
+    "web": "http://www.jacklukic.com"
+  },
+  "ignore": [
+    "docs",
+    "node",
+    "server",
+    "spec",
+    "src",
+    "test"
+  ],
+  "keywords": [
+    "semantic",
+    "ui",
+    "css3",
+    "framework"
+  ],
+  "license": [
+    "http://semantic-ui.mit-license.org/"
+  ],
+  "main": [
+    "form.css"
+  ],
+  "version": "2.1.7",
+  "_release": "2.1.7",
+  "_resolution": {
+    "type": "version",
+    "tag": "2.1.7",
+    "commit": "56496c3914af29ab9daee11f9d626ddd2ee51251"
+  },
+  "_source": "git://github.com/Semantic-Org/UI-Form.git",
+  "_target": "~2.1.7",
+  "_originalSource": "semantic-ui-form",
+  "_direct": true
+}

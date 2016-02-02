@@ -22,10 +22,10 @@
       
     $translateProvider.translations('english', {
     HOME: 'Home',
-    ABOUT: 'About',
+    ABOUT: 'ABOUT',
     APP: 'App',  
-    LOGIN: 'Login to Racing Pro',LOGINBUT:'Login',
-    CONTACT: 'Contact',
+    LOGIN: 'LOGIN TO RACING PRO',LOGINBUT:'Login',
+    CONTACT: 'CONTACT',
     SLIDE1:'Professional',SLIDE2:'horse racing program',
     SLIDE3:'Data analysis',SLIDE4:'of competition',
     SLIDE5:'Simple',SLIDE6:'and easy to use',
