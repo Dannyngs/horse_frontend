@@ -65,7 +65,7 @@
 
 ];
            
-            var options = { segmentShowStroke : false,datasetFill : false ,strokeColor: "rgba(2,2,2,1)"}
+            var options = {    animateRotate : false,animateScale : true,segmentShowStroke : false,datasetFill : false ,strokeColor: "rgba(2,2,2,1)"}
            
            if(!this.topChart){
          

@@ -1,0 +1,135 @@
+ <!-- services start -->
+        <div class="lower-page" >
+            <!-- center container start -->
+            <div class="center-container">
+                <!-- center block start -->
+                <div class="center-block">
+                    <!-- lower content start -->
+                    <div class="lower-content">
+                        <!-- services intro start -->
+                        <div class="services-intro">
+                            <h1>
+                               Racing Pro
+                            </h1>
+                        </div><!-- services intro end -->
+                        <!-- container start -->
+                        <div class="container center">
+                            <!-- divider left top start -->
+                            <div class="sixteen columns">
+                                <div class="divider-left-top"></div>
+                            </div><!-- divider left top end -->
+                            <!-- divider right top start -->
+                            <div class="sixteen columns">
+                                <div class="divider-right-top"></div>
+                            </div><!-- divider right top end -->
+                            
+                            <div class="sixteen columns ">
+                               
+                                
+
+   
+    <div ng-hide="raceLoadHidden"><h2 translate="APP_LOADING"></h2></div>
+                                  <h2 ng-show="raceSelect">{{buttonText|translate }}</h2>
+    <form class="ui form" style="width:200px;padding:20px;" ng-show="raceSelect">
+           
+  <select class="ui fluid dropdown"  style="text-align:center;" ng-model="selectedlink">
+        <option ng-repeat="race in races" value="{{race.link}}">{{race.no}}</option>
+   
+      </select>
+ 
+   <button ng-click="calc()" class="submit white-border" style="margin-top:20px;" type="submit" translate="APP_GET_SCORE"></button>
+     
+    </form>
+     <div ng-show="raceNoData">
+        <h2 translate="APP_NO_DATA_TITLE"></h2>
+         <p translate="APP_NO_DATA_CONTENT" style="font-size:18px;">
+         
+         </p>                            
+    </div>
+
+ 
+
+                                
+
+
+
+                            </div>
+                             <!-- divider left bottom start -->
+                            <div class="sixteen columns">
+                                <div class="divider-left-bottom"></div>
+                            </div><!-- divider left bottom end -->
+                            <!-- divider right bottom start -->
+                            <div class="sixteen columns">
+                                <div class="divider-right-bottom"></div>
+                            </div><!-- divider right bottom end -->
+                            
+                           
+                           
+                        </div><!-- container end -->
+                        <!-- closer start -->
+                        <div class="fire-closer">
+                            <a class="menu-state" ng-click="UserLogout()" id="fire-about-closer"><img alt="Closer" src="assets/images/closer.png"></a>
+                        </div><!-- closer end -->
+                        <div class="container center" ng-show="isResultReady" style="padding:30px 0px">
+                              
+                             <div class="sixteen columns">
+                            <h2>{{raceinfo}}</h2>
+                            </div>
+                            
+                            <div class="five columns " style="margin:30px 0px">
+                            <canvas id="top1" width="200" height="200"></canvas>
+                                <div class="top-horse-title">{{horseList[0].horse}} ({{horseList[0].no}})  : {{horseList[0].grade}}</div>
+                            </div>
+                            <div class="six columns " style="margin:30px 0px">
+                            <canvas id="top2" width="200" height="200"></canvas>
+                                <div class="top-horse-title">{{horseList[1].horse}} ({{horseList[1].no}})  : {{horseList[1].grade}}</div>
+                            </div>
+                            <div class="five columns " style="margin:30px 0px">
+                            <canvas id="top3" width="200" height="200"></canvas>
+                                <div class="top-horse-title">{{horseList[2].horse}} ({{horseList[2].no}})  : {{horseList[2].grade}}</div>
+                            </div>
+                              <div class="sixteen columns">
+                               <h2 translate="TOP3">Top 3 (Recommended Bets)</h2>
+                            </div>
+                            <div class="sixteen columns " style="margin:30px 0px">
+                            <canvas id="myChart" width="700px" height="350"></canvas>
+                                <h2 translate="HG">Horse Grade  </h2>
+                            </div>
+                            
+                           
+                             <div class="sixteen columns " style="margin:30px 0px">
+                            <canvas id="horse_weight" width="700px" height="350"></canvas>
+                                <h2 translate="HW">Horse Weight (lb)  </h2>
+                            </div>
+                            
+                            <div class="sixteen columns " style="margin:30px 0px">
+                            <canvas id="weight" width="700px" height="350"></canvas>
+                                <h2 translate="WR"> Weight Ranking (lb) </h2>
+                            </div>
+                            
+                             <div class="sixteen columns " style="margin:30px 0px">
+                            <canvas id="trainer_score" width="700px" height="350"></canvas>
+                                <h2 translate="TG">Trainer Grade  </h2>
+                            </div>
+                                                        
+
+                             <div class="sixteen columns " style="margin:30px 0px">
+                            <canvas id="jockey_score" width="700px" height="350"></canvas>
+                                <h2 translate="JG">Jockey Grade  </h2>
+                            </div>
+                            
+                            <div class="sixteen columns " style="margin:30px 0px">
+                            <canvas id="draw" width="700px" height="350"></canvas>
+                                <h2 translate="DP">Draw Placed  </h2>
+                            </div>
+                            
+                            <div class="sixteen columns " style="margin:30px 0px">
+                            <canvas id="veterinary" width="350px" height="350"></canvas>
+                                
+                            </div>
+                        </div>
+                    </div><!-- lower content end -->
+                </div><!-- center container end -->
+            </div><!-- center block end -->
+        </div><!-- services end -->
+       

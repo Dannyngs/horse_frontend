@@ -10,38 +10,38 @@
     $stateProvider
       .state('home', {
         url: '/',
-        templateUrl: 'app/main/main.html',
+        templateUrl: 'app/view/main.html',
         controller: 'MainController',
         controllerAs: 'main',
          accessRequired: false
       })
         .state('about', {
         url: '/about',
-        templateUrl: 'app/main/about.html',
+        templateUrl: 'app/view/about.html',
          accessRequired: false
       })
      .state('terms', {
         url: '/terms',
-        templateUrl: 'app/main/terms.html',
+        templateUrl: 'app/view/terms.html',
          accessRequired: false
       })
     .state('login', {
         url: '/login',
-        templateUrl: 'app/main/login.html',
+        templateUrl: 'app/view/login.html',
         controller: 'LoginController',
         controllerAs: 'login',
          accessRequired: false
       })
     .state('app', {
         url: '/app',
-        templateUrl: 'app/main/app.html' ,
+        templateUrl: 'app/view/app.html' ,
         controller: 'AppController',
         controllerAs: 'app',
-         accessRequired: false
+         accessRequired: true
       })
     .state('contact', {
         url: '/contact',
-        templateUrl: 'app/main/contact.html',
+        templateUrl: 'app/view/contact.html',
          accessRequired: false
       });
 

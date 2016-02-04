@@ -310,7 +310,7 @@ margin: 0 auto;
 padding: 10px;
 color: #fff;
 text-align: center;
-font-size:18px;
+font-size:15px;
 }
 
 .center {
@@ -331,7 +331,7 @@ padding: 0 0 50px 0;
 }
 
 .info {
-font-family: 'Roboto', sans-serif;
+font-family: 'Roboto', sans-serif,"微軟正黑體";
 font-size: 15px;
 font-weight: 500;
 font-style: normal;
@@ -374,7 +374,7 @@ z-index: 2;
 
 h2 {
 font-family: 'Oswald', sans-serif,'微軟正黑體';
-font-size: 35px;
+font-size: 25px;
 font-style: normal;
 font-weight: 400;
 letter-spacing: normal;
@@ -798,11 +798,10 @@ border-color: rgba(255,255,255,0.5);
 
 .submit {
 position: relative;
-width: 45%;
 border: 1px solid #fff;
 padding: 5px 35px;
 background: none;
-font-family: 'Oswald', sans-serif;
+font-family: 'Oswald', sans-serif,'微軟正黑體';
 font-size: 12px;
 font-weight: 400;
 font-style: normal;
@@ -1049,7 +1048,7 @@ list-style-type: none;
 
 .social-icons-wrapper ul li {
 display: inline;
-margin: 0 auto;
+margin: 0 10px;
 padding: 0;
 }
 
@@ -1359,7 +1358,7 @@ overflow: hidden;
 }
 
 .top-horse-title{
-    font-size:20px;
+    font-size:15px;
 }
 
 .myfont p{text-align:left!important;margin-bottom:-5px;}

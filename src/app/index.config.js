@@ -29,11 +29,11 @@
     SLIDE1:'Professional',SLIDE2:'horse racing program',
     SLIDE3:'Data analysis',SLIDE4:'of competition',
     SLIDE5:'Simple',SLIDE6:'and easy to use',
-    ABOUT_CONTENT:'Our company, RACING PRO, has invested horse racing matches in Hong Kong for many years. Our company owns a very strong Horse Racing database. What’s more, we hire specially-assigned persons to analyze each competition in order to make horse racing becomes a professional investment with abundant profits. All horse racing matches are calculated by the program and data. When the data meet the requirement, the program will provide some information for you to bet. Professional horse racing program RACING PRO collects one-off fee, and members may use it permanently. We provide independent entry account for each person.',
+    ABOUT_CONTENT:'Our company, RACING PRO, has invested horse racing matches in Hong Kong for many years. Our company owns a very strong Horse Racing database. What’s more, we hire specially-assigned persons to analyze each competition in order to make horse racing becomes <a href="">a professional investment with abundant profits</a>. All horse racing matches are calculated by the program and data. When the data meet the requirement, the program will provide some information for you to bet. Professional horse racing program RACING PRO charges one-off fee, and members may use it permanently. <a href="">We provide independent entry account for each person</a>.',
     ABOUT_GT1:'STRONG DATABASE',ABOUT_GT2:'AFTER-SALE SERVICE',ABOUT_GT3:'PROFESSIONAL ANALYSIS',
-    ABOUT_GC1:'Our company owns horse racing data for many years',
-    ABOUT_GC2:'Answer all questions about the program and marches to members' ,  
-    ABOUT_GC3:'In order to improve the winning rate, specially-assigned persons analyze each match'   ,
+    ABOUT_GC1:'Our company owns<a href=""> horse racing data</a> for many years',
+    ABOUT_GC2:'<a href="">Answer all questions</a> about the program and matches to members' ,  
+    ABOUT_GC3:'In order to <a href="">improve the winning rate</a>, specially-assigned persons analyze each match'   ,
     
     CONTACT_GT1:'PROFESSIONAL HORSE RACING PROGRAM',CONTACT_GT2:'TEL. (WHATSAPP)',CONTACT_GT3:'ACCOUNT IN HONG KONG',CONTACT_GT4:'ACCOUNT IN MACAO',
     CONTACT_GC1:'(Computer / smart phone / tablet PC)<br>Price: $9,000<br>(One-off charge and permanent use)<br>',
@@ -45,7 +45,7 @@
     APP_LOADING:'Loading race data , please wait ...',
     APP_NO_DATA_TITLE:'The Data be available on:',
     APP_NO_DATA_CONTENT:' Mondays (for Wednesday meetings except special race meetings) <br>Thursdays (for Saturday or Sunday meetings except special race meetings).',
-    APP_GET_SCORE:"GET SCORE",
+    APP_GET_SCORE:"SCORE",
     APP_ANALYZING:"Anylyzing...",
     APP_SELECT_RACE:"Please select a race",
     APP_NO_DATA:"Sorry ! Could not get any data yet. Please come back later",
@@ -55,8 +55,8 @@
     WR:'Weight Ranking (lb)',
     TG:'Trainer Grade',
     JG:'Jockey Grade',
-    DP:'Draw Placed'
-    
+    DP:'Draw Placed',
+    TEMP:'Current Temp :'
     
         
   });
@@ -88,17 +88,18 @@
       APP_GET_SCORE:"分析",
     APP_ANALYZING:"正在分析數據...",
     APP_SELECT_RACE:"請選擇賽事",
-    APP_NO_DATA:"系統正在分析賽事，暫未能提供賽事分析結果，請等等再試",
+    APP_NO_DATA:"系統正在分析本場賽事，暫未能提供賽事分析結果，請等等再試",
     TOP3:'前3名 (建議投注)',
     HG:'馬匹評分',
     HW:'馬匹體重 (磅)',
     WR:'馬匹負磅 (磅)',
     TG:'練馬師評分',
     JG:'騎師評分',
-    DP:'檔位評分'
+    DP:'檔位評分',
+    TEMP:'現時氣溫 :'
       
   });
-  $translateProvider.preferredLanguage('english');
+  $translateProvider.preferredLanguage('chinese');
 
     
     
