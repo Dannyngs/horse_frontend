@@ -71,7 +71,7 @@
                         </div><!-- container end -->
                         <!-- closer start -->
                        
-                        <div class="container center" ng-show="isResultReady" style="padding:30px 0px">
+                        <div class="container center"  style="padding:30px 0px">
                               
                              <div class="sixteen columns">
                             <h2>{{raceinfo}}</h2>
@@ -81,7 +81,7 @@
                             <canvas id="top1" width="200" height="200"></canvas>
                                 <div class="top-horse-title" >{{horseList[0].horse}} ({{horseList[0].no}})  : {{horseList[0].grade}}</div>
                             </div>
-                            <div class="six columns " style="margin:30px 0px">
+                            <div class="six columns "  style="margin:30px 0px">
                             <canvas id="top2" width="200" height="200"></canvas>
                                 <div class="top-horse-title" >{{horseList[1].horse}} ({{horseList[1].no}})  : {{horseList[1].grade}}</div>
                             </div>
@@ -92,7 +92,8 @@
                               <div class="sixteen columns">
                                <h2 translate="TOP3">Top 3 (Recommended Bets)</h2>
                             </div>
-                            <div class="sixteen columns " style="margin:30px 0px">
+                            
+                            <div class="sixteen columns "  style="margin:30px 0px">
                             <canvas id="myChart" width="700px" height="350"></canvas>
                                 <h2 translate="HG">Horse Grade  </h2>
                             </div>
@@ -103,23 +104,23 @@
                                 <h2 translate="HW">Horse Weight (lb)  </h2>
                             </div>
                             
-                            <div class="sixteen columns " style="margin:30px 0px">
+                            <div class="sixteen columns " ng-show="!isResultReady"style="margin:30px 0px">
                             <canvas id="weight" width="700px" height="350"></canvas>
                                 <h2 translate="WR"> Weight Ranking (lb) </h2>
                             </div>
                             
-                             <div class="sixteen columns " style="margin:30px 0px">
+                             <div class="sixteen columns " ng-show="!isResultReady"style="margin:30px 0px">
                             <canvas id="trainer_score" width="700px" height="350"></canvas>
                                 <h2 translate="TG">Trainer Grade  </h2>
                             </div>
                                                         
 
-                             <div class="sixteen columns " style="margin:30px 0px">
+                             <div class="sixteen columns " ng-show="!isResultReady"style="margin:30px 0px">
                             <canvas id="jockey_score" width="700px" height="350"></canvas>
                                 <h2 translate="JG">Jockey Grade  </h2>
                             </div>
                             
-                            <div class="sixteen columns " style="margin:30px 0px">
+                            <div class="sixteen columns " ng-show="!isResultReady"style="margin:30px 0px">
                             <canvas id="draw" width="700px" height="350"></canvas>
                                 <h2 translate="DP">Draw Placed  </h2>
                             </div>
