@@ -796,6 +796,7 @@ border-color: rgba(255,255,255,0.5);
         animation: glow 900ms ease-out infinite alternate;
 }
 
+
 .submit {
 position: relative;
 border: 1px solid #fff;
@@ -824,12 +825,14 @@ outline: none;
 color: #fff;
 }
 
+@media (min-width:768px) {
 .submit:hover:after,
 .submit:active:after {
 height: 100%;
 }
 
 .submit:after {
+    
 position: absolute;
 width: 100%;
 height: 0;
@@ -843,7 +846,7 @@ content: '';
         transition: all 0.3s;
 z-index: -1;
 }
-
+  }
 .success {
 font-family: 'Oswald', sans-serif;
 font-size: 13px;
@@ -1053,7 +1056,7 @@ padding: 0;
 }
 
 ul.social-icons {
-font-size: 15px;
+font-size: 14px;
 margin: 0;
 padding: 0;
 }

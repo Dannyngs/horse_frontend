@@ -5,6 +5,25 @@
                 <!-- center block start -->
                 <div class="center-block">
                     <!-- lower content start -->
+                     <div class="social-icons-wrapper">
+                     <ul class="social-icons">
+   
+    <li ng-show="currentLang()=='english'">
+
+
+      <a  ng-click="changeLanguage('chinese')"  >中文版</a>
+    </li>
+    <li ng-show="currentLang()=='chinese'">
+      <a   ng-click="changeLanguage('english')" >English</a>
+
+    </li>
+    <li >
+      <a class="fa fa-facebook-square fa-2x" target="blank" href="https://www.facebook.com/racingprohk"></a>
+    </li>
+
+
+  </ul>
+                    </div>
                     <div class="lower-content">
                         <!-- contact intro start -->
                         <div class="contact-intro">
@@ -46,7 +65,7 @@
                                         <div class="holder">
                                             
                                             <div>
-                                                <button translate="LOGINBUT" ng-click="UserLogin()" class="submit white-border" data-hover="Submit" type="submit" value="Submit">Login</button>
+                                                <button translate="LOGINBUT" ng-click="UserLogin()" class="submit white-border" type="submit" value="Submit">Login</button>
                                             </div>
                                         </div>
                                     </form>
