@@ -5,11 +5,14 @@
                 <!-- center block start -->
                 <div class="center-block">
                     <!-- lower content start -->
+                    
+                         
+                    </div><!-- social icons end -->
                     <div class="lower-content">
                         <!-- services intro start -->
                         <div class="services-intro">
                             <h1>
-                               Racing Pro
+                               RACING PRO
                             </h1>
                         </div><!-- services intro end -->
                         <!-- container start -->
@@ -67,9 +70,7 @@
                            
                         </div><!-- container end -->
                         <!-- closer start -->
-                        <div class="fire-closer">
-                            <a class="menu-state" ng-click="UserLogout()" id="fire-about-closer"><img alt="Closer" src="assets/images/closer.png"></a>
-                        </div><!-- closer end -->
+                       
                         <div class="container center" ng-show="isResultReady" style="padding:30px 0px">
                               
                              <div class="sixteen columns">
@@ -78,15 +79,15 @@
                             
                             <div class="five columns " style="margin:30px 0px">
                             <canvas id="top1" width="200" height="200"></canvas>
-                                <div class="top-horse-title">{{horseList[0].horse}} ({{horseList[0].no}})  : {{horseList[0].grade}}</div>
+                                <div class="top-horse-title" >{{horseList[0].horse}} ({{horseList[0].no}})  : {{horseList[0].grade}}</div>
                             </div>
                             <div class="six columns " style="margin:30px 0px">
                             <canvas id="top2" width="200" height="200"></canvas>
-                                <div class="top-horse-title">{{horseList[1].horse}} ({{horseList[1].no}})  : {{horseList[1].grade}}</div>
+                                <div class="top-horse-title" >{{horseList[1].horse}} ({{horseList[1].no}})  : {{horseList[1].grade}}</div>
                             </div>
                             <div class="five columns " style="margin:30px 0px">
                             <canvas id="top3" width="200" height="200"></canvas>
-                                <div class="top-horse-title">{{horseList[2].horse}} ({{horseList[2].no}})  : {{horseList[2].grade}}</div>
+                                <div class="top-horse-title" >{{horseList[2].horse}} ({{horseList[2].no}})  : {{horseList[2].grade}}</div>
                             </div>
                               <div class="sixteen columns">
                                <h2 translate="TOP3">Top 3 (Recommended Bets)</h2>
@@ -128,6 +129,15 @@
                                 
                             </div>
                         </div>
+                        
+                        <!-- <div class="fire-closer">
+                            <a class="menu-state" ng-click="UserLogout()" id="fire-about-closer"><img alt="Closer" src="assets/images/closer.png"></a>
+                        </div> closer end -->
+                         <div class="social-icons-wrapper" style="">
+                       
+                      <div class="social-icons-wrapper">
+                    <ng-include src="'app/view/WeatherBar.html'"></ng-include>
+                    </div>
                     </div><!-- lower content end -->
                 </div><!-- center container end -->
             </div><!-- center block end -->

@@ -80,7 +80,7 @@ border-collapse: collapse;
 border-spacing: 0;
 }
 
-*:focus {  
+*:focus {
 outline: none;
 }
 
@@ -560,26 +560,26 @@ text-align: left;
 }
 
 ul.mainNav li a {
-font-family: 'Oswald', sans-serif;
+font-family: 'Oswald', sans-serif,"微軟正黑體";
 font-size: 15px;
 font-style: normal;
 font-weight: 400;
 text-transform: uppercase;
 color: #fff;
 display: block;
-margin-bottom: 10px; 
-padding-left: 15px; 
+margin-bottom: 10px;
+padding-left: 15px;
 list-style: none;
 outline: none;
 }
 
 ul.mainNav li a:hover {
-padding-left: 12px; 
+padding-left: 12px;
 border-left: 3px solid #fff;
 }
 
 ul.mainNav li a.active {
-padding-left: 12px; 
+padding-left: 12px;
 border-left: 3px solid #fff;
 }
 
@@ -780,7 +780,7 @@ font-style: normal;
 font-weight: normal;
 text-align: center;
 color: #fff;
-} 
+}
 
 input:hover,
 textarea:hover{
@@ -869,7 +869,7 @@ padding: 0;
 @-webkit-keyframes glow {
     0% {
 		box-shadow: 0 0 5px rgba(255,255,255,0.2), inset 0 0 5px rgba(255,255,255,0.1)
-		}	
+		}
     100% {
 		box-shadow: 0 0 20px rgba(255,255,255,0.6), inset 0 0 10px rgba(255,255,255,0.4)
 		}
@@ -877,7 +877,7 @@ padding: 0;
 @-moz-keyframes glow {
     0% {
 		box-shadow: 0 0 5px rgba(255,255,255,0.2), inset 0 0 5px rgba(255,255,255,0.1)
-    }	
+    }
     100% {
 		box-shadow: 0 0 20px rgba(255,255,255,0.6), inset 0 0 10px rgba(255,255,255,0.4)
     }
@@ -885,7 +885,7 @@ padding: 0;
 @-o-keyframes glow {
     0% {
 		box-shadow: 0 0 5px rgba(255,255,255,0.2), inset 0 0 5px rgba(255,255,255,0.1)
-    }	
+    }
     100% {
 		box-shadow: 0 0 20px rgba(255,255,255,0.6), inset 0 0 10px rgba(255,255,255,0.4)
     }
@@ -893,7 +893,7 @@ padding: 0;
 @-ms-keyframes glow {
     0% {
 		box-shadow: 0 0 5px rgba(255,255,255,0.2), inset 0 0 5px rgba(255,255,255,0.1)
-    }	
+    }
     100% {
 		box-shadow: 0 0 20px rgba(255,255,255,0.6), inset 0 0 10px rgba(255,255,255,0.4)
     }
@@ -901,7 +901,7 @@ padding: 0;
 @keyframes glow {
     0% {
 		box-shadow: 0 0 5px rgba(255,255,255,0.2), inset 0 0 5px rgba(255,255,255,0.1)
-    }	
+    }
     100% {
 		box-shadow: 0 0 20px rgba(255,255,255,0.6), inset 0 0 10px rgba(255,255,255,0.4)
     }
@@ -1204,8 +1204,8 @@ background: #000 url(../images/preload.gif) no-repeat center center;
 filter: alpha(opacity=100);
 -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
 }
-	
-	
+
+
 /* preload content */
 .preload-content {
 position: fixed;

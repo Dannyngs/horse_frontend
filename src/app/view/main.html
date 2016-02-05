@@ -1,6 +1,6 @@
 <!--<acme-navbar creation-date="main.creationDate"></acme-navbar>-->
 <!-- screen loader start -->
-       
+
         <!-- upper page start -->
         <div class="upper-page current" >
             <!-- center container start -->
@@ -11,26 +11,8 @@
                     <div class="borders"></div><!-- borders end -->
                     <!-- social icons start -->
                     <div class="social-icons-wrapper">
-                       
-                        <ul class="social-icons">
-                            <li >
-<span translate="TEMP"></span><span> {{temp}}</span>℃
-                                
-                            </li>
-                            <li ng-show="currentLang()=='english'">
-                                <!-- <a class="fa fa-facebook-square fa-2x" target="blank" href="https://www.facebook.com/racingprohk"></a>-->
-                                
-<a  ng-click="changeLanguage('chinese')"  >中文版</a>
-                               </li>
-                                <li ng-show="currentLang()=='chinese'">
-<a   ng-click="changeLanguage('english')" >English</a>
-                                
-                            </li>
-                            
-                           
-                        </ul>
-                         
-                    </div><!-- social icons end -->
+                    <ng-include src="'app/view/WeatherBar.html'"></ng-include>
+                    </div>
                     <!-- upper content start -->
                     <div class="upper-content">
                         <!-- container start -->
@@ -51,7 +33,7 @@
                                       <img style="max-width:100%;" src="assets/images/logo.png"/>
                                     </div>
                                 </div>
-                               
+
                                 <div class="eight columns column">
                                     <!-- teaser start -->
                                     <div id="teaser">
@@ -59,7 +41,7 @@
                                             <!-- teaser line 1 start -->
                                             <div class="teaser-text-animation active first">
                                                 <h3>
-                                                    <span class="teaser-normal"  >Professional 
+                                                    <span class="teaser-normal"  >Professional
 </span> <span class="teaser-highlight" >horse racing program</span>
                                                 </h3>
                                             </div><!-- teaser line 1 end -->
@@ -75,7 +57,7 @@
                                                     <span class="teaser-normal" >Simple </span> <span class="teaser-highlight" >and easy to use</span>
                                                 </h3>
                                             </div><!-- teaser line 3 end -->
-                                           
+
                                         </div>
                                     </div><!-- teaser end -->
                                 </div>
@@ -109,9 +91,8 @@
                             </ul>
                         </div>
                     </div>--><!-- launch countdown end -->
-                    
+
                 </div><!-- center container end -->
             </div><!-- center block end -->
         </div><!-- upper page end -->
-       
-       
+
