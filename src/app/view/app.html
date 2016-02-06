@@ -71,7 +71,7 @@
                         </div><!-- container end -->
                         <!-- closer start -->
                        
-                        <div class="container center"  style="padding:30px 0px">
+                        <div class="container center"  ng-show="isResultReady" style="padding:30px 0px">
                               
                              <div class="sixteen columns">
                             <h2>{{raceinfo}}</h2>
@@ -104,23 +104,23 @@
                                 <h2 translate="HW">Horse Weight (lb)  </h2>
                             </div>
                             
-                            <div class="sixteen columns " ng-show="!isResultReady"style="margin:30px 0px">
+                            <div class="sixteen columns "style="margin:30px 0px">
                             <canvas id="weight" width="700px" height="350"></canvas>
                                 <h2 translate="WR"> Weight Ranking (lb) </h2>
                             </div>
                             
-                             <div class="sixteen columns " ng-show="!isResultReady"style="margin:30px 0px">
+                             <div class="sixteen columns " style="margin:30px 0px">
                             <canvas id="trainer_score" width="700px" height="350"></canvas>
                                 <h2 translate="TG">Trainer Grade  </h2>
                             </div>
                                                         
 
-                             <div class="sixteen columns " ng-show="!isResultReady"style="margin:30px 0px">
+                             <div class="sixteen columns " style="margin:30px 0px">
                             <canvas id="jockey_score" width="700px" height="350"></canvas>
                                 <h2 translate="JG">Jockey Grade  </h2>
                             </div>
                             
-                            <div class="sixteen columns " ng-show="!isResultReady"style="margin:30px 0px">
+                            <div class="sixteen columns " style="margin:30px 0px">
                             <canvas id="draw" width="700px" height="350"></canvas>
                                 <h2 translate="DP">Draw Placed  </h2>
                             </div>
