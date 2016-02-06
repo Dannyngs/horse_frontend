@@ -20,6 +20,7 @@
 
 
 
+
     $translateProvider.translations('english', {
     HOME: 'Home',
     ABOUT: 'ABOUT',
