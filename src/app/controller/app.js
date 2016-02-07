@@ -74,12 +74,17 @@ var url='http://horseback-dev.ap-southeast-1.elasticbeanstalk.com/';
            for(var i=0;i<horseList.length;i++){
               horse_name.push(horseList[i].horse);
            }
+           var horse_no =[];
+           for(var i=0;i<horseList.length;i++){
+              horse_no.push(horseList[i].no);
+           }
+           
          var horse_grade =[];
            for(var i=0;i<horseList.length;i++){
               horse_grade.push(horseList[i].grade);
            }   
            
-           chart.drawBar(horse_name,horse_grade);
+           chart.drawBar(horseList);
            chart.drawTrainer(horseList);
              chart.drawJockey(horseList);
            chart.drawHorseWeight(horseList);

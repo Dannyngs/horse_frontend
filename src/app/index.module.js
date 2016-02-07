@@ -6,7 +6,7 @@
 
 
 
-      .factory('chart',function($window){
+      .factory('chart',function($window,$translate){
 
 
 
@@ -89,8 +89,19 @@
        },
 
 
-       drawBar:function(labels,dt){
-
+       drawBar:function(data){
+        var labels =[];
+           for(var i=0;i<data.length;i++){
+              if($translate.use()=='english')
+               labels.push(data[i].no);
+               else labels.push(data[i].horse);
+           }
+         var dt =[];
+           for(var i=0;i<data.length;i++){
+              dt.push(data[i].grade);
+           }
+           
+           
            var ctx = document.getElementById("myChart").getContext("2d");
            var data = {
     labels: labels,
@@ -202,7 +213,9 @@
        drawHorseWeight:function(data){
             var labels =[];
            for(var i=0;i<data.length;i++){
-               labels.push(data[i].horse);
+              if($translate.use()=='english')
+               labels.push(data[i].no);
+               else labels.push(data[i].horse);
            }
          var dt =[];
            for(var i=0;i<data.length;i++){
@@ -241,13 +254,14 @@
       drawWeight:function(data){
             var labels =[];
            for(var i=0;i<data.length;i++){
-               labels.push(data[i].horse);
+              if($translate.use()=='english')
+               labels.push(data[i].no);
+               else labels.push(data[i].horse);
            }
          var dt =[];
            for(var i=0;i<data.length;i++){
               dt.push(data[i].weight);
            }
-
 
 
            var ctx = document.getElementById("weight").getContext("2d");
@@ -280,7 +294,10 @@
        drawDraw:function(data){
             var labels =[];
            for(var i=0;i<data.length;i++){
-               labels.push(data[i].horse);
+               if($translate.use()=='english')
+               labels.push(data[i].no);
+               else labels.push(data[i].horse);
+               
            }
          var dt =[];
            for(var i=0;i<data.length;i++){

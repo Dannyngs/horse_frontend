@@ -8,8 +8,7 @@
   /** @ngInject */
   function LoginController($rootScope,$scope, UserService, $location,toastr,SocketService) {
   
-      $scope.username="qwe";
-      $scope.password="qwe";
+   
       
       $scope.UserLogin = function() {
  	
