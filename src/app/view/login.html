@@ -6,30 +6,18 @@
                 <div class="center-block">
                     <!-- lower content start -->
                      <div class="social-icons-wrapper">
-                     <ul class="social-icons">
-   
-    <li ng-show="currentLang()=='english'">
+                   <ng-include src="'app/view/LangBar.html'"></ng-include>
 
-
-      <a  ng-click="changeLanguage('chinese')"  >中文版</a>
-    </li>
-    <li ng-show="currentLang()=='chinese'">
-      <a   ng-click="changeLanguage('english')" >English</a>
-
-    </li>
-    <li >
-      <a class="fa fa-facebook-square fa-2x" target="blank" href="https://www.facebook.com/racingprohk"></a>
-    </li>
-
-
-  </ul>
                     </div>
                     <div class="lower-content">
                         <!-- contact intro start -->
-                        <div class="contact-intro">
+                        
+                        
+                        <div class="contact-intro" >
                             <h1 translate="LOGIN">
                                 Login
                             </h1>
+                           
                         </div><!-- contact intro end -->
                         <!-- container start -->
                         <div class="container center">

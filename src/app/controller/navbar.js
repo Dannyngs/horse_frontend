@@ -100,7 +100,12 @@ $rootScope.currentLang=function()
   };
 
 
-
+$rootScope.mobileClose=true;
+  
+       $rootScope.mobileTogle=function(){
+           
+           $rootScope.mobileClose=!$rootScope.mobileClose;
+       }
 
   }
 

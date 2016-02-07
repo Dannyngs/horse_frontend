@@ -71,64 +71,62 @@
                         </div><!-- container end -->
                         <!-- closer start -->
                        
-                        <div class="container center"  ng-show="isResultReady" style="padding:30px 0px">
+                        <div id="datapanel"class="container center"  ng-show="isResultReady" style="padding:30px 0px">
                               
                              <div class="sixteen columns">
                             <h2>{{raceinfo}}</h2>
                             </div>
-                            
-                            <div class="five columns " style="margin:30px 0px">
-                            <canvas id="top1" width="200" height="200"></canvas>
+                         
+                            <div class="five columns offset-by-one" style="margin-top:30px;margin-bottom:30px">
+                            <canvas id="top1" ></canvas>
                                 <div class="top-horse-title" >{{horseList[0].horse}} ({{horseList[0].no}})  : {{horseList[0].grade}}</div>
                             </div>
-                            <div class="six columns "  style="margin:30px 0px">
-                            <canvas id="top2" width="200" height="200"></canvas>
+                            <div class="five columns "  style="margin:30px 0px">
+                            <canvas id="top2" ></canvas>
                                 <div class="top-horse-title" >{{horseList[1].horse}} ({{horseList[1].no}})  : {{horseList[1].grade}}</div>
                             </div>
                             <div class="five columns " style="margin:30px 0px">
-                            <canvas id="top3" width="200" height="200"></canvas>
+                            <canvas id="top3" ></canvas>
                                 <div class="top-horse-title" >{{horseList[2].horse}} ({{horseList[2].no}})  : {{horseList[2].grade}}</div>
                             </div>
-                              <div class="sixteen columns">
+                         
+                              <div class="fourteen columns">
                                <h2 translate="TOP3">Top 3 (Recommended Bets)</h2>
                             </div>
                             
-                            <div class="sixteen columns "  style="margin:30px 0px">
-                            <canvas id="myChart" width="700px" height="350"></canvas>
+                            <div class="ten columns offset-by-three "  style="margin-top:30px;margin-bottom:30px">
+                            <canvas id="myChart" ></canvas>
                                 <h2 translate="HG">Horse Grade  </h2>
                             </div>
                             
                            
-                             <div class="sixteen columns " style="margin:30px 0px">
-                            <canvas id="horse_weight" width="700px" height="350"></canvas>
+                             <div class="ten columns offset-by-three " style="margin-top:30px;margin-bottom:30px">
+                            <canvas id="horse_weight" ></canvas>
                                 <h2 translate="HW">Horse Weight (lb)  </h2>
                             </div>
                             
-                            <div class="sixteen columns "style="margin:30px 0px">
-                            <canvas id="weight" width="700px" height="350"></canvas>
+                            <div class="ten columns offset-by-three " style="margin-top:30px;margin-bottom:30px">
+                            <canvas id="weight" ></canvas>
                                 <h2 translate="WR"> Weight Ranking (lb) </h2>
                             </div>
                             
-                             <div class="sixteen columns " style="margin:30px 0px">
-                            <canvas id="trainer_score" width="700px" height="350"></canvas>
+                             <div class="ten columns offset-by-three " style="margin-top:30px;margin-bottom:30px">
+                            <canvas id="trainer_score" ></canvas>
                                 <h2 translate="TG">Trainer Grade  </h2>
                             </div>
                                                         
 
-                             <div class="sixteen columns " style="margin:30px 0px">
+                             <div class="ten columns offset-by-three " style="margin-top:30px;margin-bottom:30px">
                             <canvas id="jockey_score" width="700px" height="350"></canvas>
                                 <h2 translate="JG">Jockey Grade  </h2>
                             </div>
                             
-                            <div class="sixteen columns " style="margin:30px 0px">
+                            <div class="ten columns offset-by-three " style="margin-top:30px;margin-bottom:30px">
                             <canvas id="draw" width="700px" height="350"></canvas>
                                 <h2 translate="DP">Draw Placed  </h2>
                             </div>
                             
-                            <div class="sixteen columns " style="margin:30px 0px">
-                            <canvas id="veterinary" width="350px" height="350"></canvas>
-                                
-                            </div>
+                           
                         </div>
                         
                         <!-- <div class="fire-closer">

@@ -50,7 +50,31 @@
         </div><!-- preload content end -->
       
       <racenav></racenav>
-        
+        <!-- menu mobile start -->
+        <nav class="menu-mobile">
+            <ul>
+                <li>
+                    <ul ng-class="{'hidden':mobileClose}">
+                        <li class="lifting-first">
+                            <a class="menu-state active" translate="HOME" href="#" >Home</a>
+                        </li>
+                        <li class="lifting">
+                            <a class="menu-state" translate="ABOUT" href="#about" >About</a>
+                        </li>
+                        <li class="lifting">
+                            <a class="menu-state" translate="APP" href="#login" >App</a>
+                        </li>
+                        <li class="lifting">
+                            <a class="menu-state" translate="TERMS" href="#terms" >Terms</a>
+                        </li>
+                        <li class="lifting">
+                            <a class="menu-state" translate="CONTACT" href="#contact" >Contact</a>
+                        </li>
+                    </ul>
+                    <a class="menu-mobile-trigger"  ng-click="mobileTogle()"><span class="menu-icon"></span></a>
+                </li>
+            </ul>
+        </nav><!-- menu mobile end -->
     <div ui-view></div>
 
     <!-- build:js(src) scripts/vendor.js -->
@@ -69,6 +93,7 @@
              <script type="text/javascript" src="app/controller/app.js"></script>
                    <script type="text/javascript" src="app/controller/login.js"></script>
                    <script type="text/javascript" src="app/controller/navbar.js"></script>
+                   <script type="text/javascript" src="app/controller/charts/horse.js"></script>
 
 
        <script type="text/javascript" src="app/js/jquery-1.11.2.min.js"></script>

@@ -6,7 +6,7 @@
 
 
 
-      .factory('chart',function(){
+      .factory('chart',function($window){
 
 
 
@@ -111,6 +111,7 @@
 
 
         this.myBarChart= new Chart(ctx).Bar(data,options);
+                
 
     }
            else{

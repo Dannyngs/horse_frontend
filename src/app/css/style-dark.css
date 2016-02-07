@@ -689,15 +689,15 @@ height: 20px;
 }
 
 .menu-mobile li ul {
-display: none;
+
 right: 0;
 position: absolute;
 top: 100%;
 background: none;
 }
 
-.menu-mobile li:hover ul {
-display: block;
+.menu-mobile li:hover ul{
+
 width: auto;
 }
 
@@ -846,7 +846,18 @@ content: '';
         transition: all 0.3s;
 z-index: -1;
 }
+.social-icons-wrapper ul li {
+display: inline;
+
+}   
+    
   }
+
+@media (max-width:768px){
+    .social-icons-wrapper ul li{text-align: left;}
+}
+
+
 .success {
 font-family: 'Oswald', sans-serif;
 font-size: 13px;
@@ -1050,7 +1061,7 @@ list-style-type: none;
 }
 
 .social-icons-wrapper ul li {
-display: inline;
+
 margin: 0 10px;
 padding: 0;
 }
@@ -1365,3 +1376,12 @@ overflow: hidden;
 }
 
 .myfont p{text-align:left!important;margin-bottom:-5px;}
+
+.lang {
+    font-size:17px;
+    font-weight:bold;
+    color: #bb141a;
+
+}
+
+.hidden{display: none;}

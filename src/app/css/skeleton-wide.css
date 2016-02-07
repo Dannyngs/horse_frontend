@@ -63,9 +63,9 @@
     .container .two-thirds.column               { width: 780px; }
 
     /* Offsets */
-    .container .offset-by-one                   { padding-left: 75px;  }
-    .container .offset-by-two                   { padding-left: 150px; }
-    .container .offset-by-three                 { padding-left: 225px; }
+    .container .offset-by-one                   { margin-left: 75px;  }
+    .container .offset-by-two                   { margin-left: 150px; }
+    .container .offset-by-three                 { margin-left: 225px; }
     .container .offset-by-four                  { padding-left: 300px; }
     .container .offset-by-five                  { padding-left: 380px; }
     .container .offset-by-six                   { padding-left: 455px; }
@@ -115,9 +115,9 @@
     .container .two-thirds.column               { width: 620px; }
 
     /* Offsets */
-    .container .offset-by-one                   { padding-left: 60px;  }
+    .container .offset-by-one                   { margin-left: 60px;  }
     .container .offset-by-two                   { padding-left: 120px; }
-    .container .offset-by-three                 { padding-left: 180px; }
+    .container .offset-by-three                 { margin-left: 180px; }
     .container .offset-by-four                  { padding-left: 240px; }
     .container .offset-by-five                  { padding-left: 300px; }
     .container .offset-by-six                   { padding-left: 360px; }
@@ -168,9 +168,9 @@
         .container .two-thirds.column               { width: 492px; }
 
         /* Offsets */
-        .container .offset-by-one                   { padding-left: 48px; }
+        .container .offset-by-one                   { margin-left: 48px; }
         .container .offset-by-two                   { padding-left: 96px; }
-        .container .offset-by-three                 { padding-left: 144px; }
+        .container .offset-by-three                 { margin-left: 144px; }
         .container .offset-by-four                  { padding-left: 192px; }
         .container .offset-by-five                  { padding-left: 240px; }
         .container .offset-by-six                   { padding-left: 288px; }
@@ -230,7 +230,7 @@
         .container .offset-by-twelve,
         .container .offset-by-thirteen,
         .container .offset-by-fourteen,
-        .container .offset-by-fifteen { padding-left: 0; }
+        .container .offset-by-fifteen { margin-left: 0; }
 
     }
 
