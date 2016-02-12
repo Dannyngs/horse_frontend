@@ -141,13 +141,17 @@ function checkOnResize(){
        
            
           
-            $(document).ready(function() {
-                /*
+$(document).ready(function() {
+                
                 $("#countdown").countdown({
                     date: "06 October 2015 12:00:00", // countdown target date settings
                     format: "on"
                 }, function() {
                     // callback function
                 });
-                */
+    
+    
+        
+  
+                
             });
