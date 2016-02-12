@@ -25,6 +25,11 @@
         templateUrl: 'app/view/terms.html',
          accessRequired: false
       })
+    .state('tutorial', {
+        url: '/tutorial',
+        templateUrl: 'app/view/tutorial.html',
+         accessRequired: false
+      })
     .state('login', {
         url: '/login',
         templateUrl: 'app/view/login.html',

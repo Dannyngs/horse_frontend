@@ -59,7 +59,9 @@
     DP:'Draw Placed',
     TEMP:'Temperature :',
     HUMI:'Humidity :',
-    WIND:'Wind Speed :'
+    WIND:'Wind Speed :',
+    TUTORIAL:'Tutorial',
+    TUTORIAL_TITLE:'Application Tutorial'
 
 
 
@@ -102,7 +104,9 @@
     DP:'檔位評分',
     TEMP:'現時氣溫 :',
     HUMI:'相對濕度 :',
-    WIND:'風速 :'
+    WIND:'風速 :',
+      TUTORIAL:'程式教學',
+    TUTORIAL_TITLE:'程式教學'
 
   });
   $translateProvider.preferredLanguage('chinese');
