@@ -61,7 +61,7 @@
     HUMI:'Humidity :',
     WIND:'Wind Speed :',
     TUTORIAL:'Tutorial',
-    TUTORIAL_TITLE:'Application Tutorial'
+    TUTORIAL_TITLE:'TUTORIAL'
 
 
 
