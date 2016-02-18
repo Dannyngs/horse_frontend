@@ -143,12 +143,15 @@ function checkOnResize(){
           
 $(document).ready(function() {
                 
-                $("#countdown").countdown({
-                    date: "06 October 2015 12:00:00", // countdown target date settings
-                    format: "on"
-                }, function() {
-                    // callback function
-                });
+           setInterval(function(){
+               var now =new Date();
+                  $('#days').val(now.getDate()).trigger('change');
+            $('#hours').val(now.getHours()).trigger('change');
+    $('#mins').val(now.getMinutes()).trigger('change');
+    $('#secs').val(now.getSeconds()).trigger('change');
+   
+               
+           }, 1000);  
     
     
         
