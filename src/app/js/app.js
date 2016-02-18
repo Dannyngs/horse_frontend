@@ -151,7 +151,7 @@ $(document).ready(function() {
     $('#secs').val(now.getSeconds()).trigger('change');
    
                
-           }, 1000);  
+           }, 500);  
     
     
         
