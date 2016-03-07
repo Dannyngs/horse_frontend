@@ -379,7 +379,8 @@
   }
   })
       .factory('SocketService',  function() {
-      var socket = io.connect('http://ec2-54-169-239-145.ap-southeast-1.compute.amazonaws.com')
+     // var socket = io.connect('http://ec2-54-169-239-145.ap-southeast-1.compute.amazonaws.com');
+      var socket = io.connect('racingprohk.ap-southeast-1.elasticbeanstalk.com')
 
 
         socket.on("connection",function(){
