@@ -8,7 +8,6 @@
   /** @ngInject */
   function AppController($scope, toastr,$http,chart,$translate) {
   
-//var url='http://horseback-dev.ap-southeast-1.elasticbeanstalk.com/';
 var url='http://racingprohk.ap-southeast-1.elasticbeanstalk.com/';
       
 //var url='http://localhost/';
@@ -51,7 +50,7 @@ var url='http://racingprohk.ap-southeast-1.elasticbeanstalk.com/';
      $scope.buttonText='APP_ANALYZING';
       $scope.isResultReady= true;
     
-       $http({
+  $http({
   method: 'POST',
   url: url,
  data:{link:$scope.selectedlink,lang:$translate.use()}
